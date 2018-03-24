@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Image Include="icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ini.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="gen.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ini.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="gen.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="rsrc.rc" />
+  </ItemGroup>
+</Project>
