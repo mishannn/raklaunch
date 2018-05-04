@@ -4,9 +4,9 @@
 #define WIN32_LEAN_AND_MEAN
 
 #define ICON_MAIN 100
-#define RAKBOT_VERSION "0.7.10.2"
+#define RAKBOT_VERSION "0.8"
 
-#define OWNIP_ID 24
+#define OWNIP_ID 25
 
 #pragma comment(linker, "/manifestdependency:\"type='win32' \
                         name='Microsoft.Windows.Common-Controls' \

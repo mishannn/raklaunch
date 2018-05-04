@@ -5,13 +5,13 @@
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LocalDebuggerCommand>D:\Other\RakBot Source\Output\launch.exe</LocalDebuggerCommand>
+    <LocalDebuggerCommand>$(SolutionDir)..\Output\RakLaunch.exe</LocalDebuggerCommand>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-    <LocalDebuggerWorkingDirectory>D:\Other\RakBot Source\Output</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerWorkingDirectory>$(SolutionDir)..\Output</LocalDebuggerWorkingDirectory>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <LocalDebuggerCommand>D:\Other\RakBot Source\Output\launch.exe</LocalDebuggerCommand>
-    <LocalDebuggerWorkingDirectory>D:\Other\RakBot Source\Output</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerCommand>$(SolutionDir)..\Output\RakLaunch.exe</LocalDebuggerCommand>
+    <LocalDebuggerWorkingDirectory>$(SolutionDir)..\Output</LocalDebuggerWorkingDirectory>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
 </Project>

@@ -159,19 +159,20 @@ LRESULT CALLBACK MainWindowProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lPar
 			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Advance RolePlay 7 | Silver Server");
 			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Advance RolePlay 8 | Purple Server");
 			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Advance RolePlay 9 | Chocolate Server");
-			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Diamond RolePlay 1 | Emerland");
+			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Diamond RolePlay 1 | Emerald");
 			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Diamond RolePlay 2 | Radiant");
 			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Diamond RolePlay 3 | Trilliant");
 			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Diamond RolePlay 4 | Crystal");
 			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Diamond RolePlay 5 | Sapphire");
 			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Diamond RolePlay 6 | Onyx");
-			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Diamond RolePlay 7 | Anber");
+			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Diamond RolePlay 7 | Amber");
 			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Diamond RolePlay 8 | Quartz");
 			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Samp-Rp.Ru | Server: 01 | Client: 0.3.7");
 			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Samp-Rp.Ru | Server: 02 | Client: 0.3.7");
 			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Samp-Rp.Ru | Server: 03 | Client: 0.3.7");
 			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Samp-Rp.Ru | Server: 04 | Client: 0.3.7");
 			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Samp-Rp.Ru | Server: 09 | Client: 0.3.7");
+			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Samp-Rp.Ru | Server: Legacy | Client: 0.3.7");
 			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Samp-Rp.Ru | Server: Reborn | Client: 0.3.7");
 			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Samp-Rp.Ru | Server: Revolution | Client: 0.3.7");
 			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Свой IP");
@@ -638,11 +639,16 @@ LRESULT CALLBACK MainWindowProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lPar
 								break;
 
 							case 22:
-								SetWindowText(hwndIP, "185.169.134.34:7777");
+								SetWindowText(hwndIP, "185.169.134.22:7773");
 								SendMessage(hwndIP, EM_SETREADONLY, 1, 0);
 								break;
 
 							case 23:
+								SetWindowText(hwndIP, "185.169.134.34:7777");
+								SendMessage(hwndIP, EM_SETREADONLY, 1, 0);
+								break;
+
+							case 24:
 								SetWindowText(hwndIP, "185.169.134.11:7777");
 								SendMessage(hwndIP, EM_SETREADONLY, 1, 0);
 								break;
