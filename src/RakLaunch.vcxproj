@@ -34,6 +34,11 @@
   <ItemGroup>
     <ResourceCompile Include="rsrc.rc" />
   </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="app.manifest">
+      <SubType>Designer</SubType>
+    </Manifest>
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{51CB5C84-3085-458C-9663-E24169CD99A6}</ProjectGuid>
     <RootNamespace>RakLaunch</RootNamespace>

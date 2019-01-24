@@ -393,7 +393,7 @@ LRESULT CALLBACK MainWindowProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lPar
 
 			hwndTemp = CreateWindowEx(NULL, WC_BUTTONA, "Сброс",
 				WS_VISIBLE | WS_TABSTOP | WS_CHILD,
-				10, 280, 60, 26, hWnd, (HMENU)IDC_RESETSETS, g_hInst, NULL);
+				10, 280, 60, 25, hWnd, (HMENU)IDC_RESETSETS, g_hInst, NULL);
 			SendMessage(hwndTemp, WM_SETFONT, (WPARAM)g_hfText, FALSE);
 
 			hwndTemp = CreateWindowEx(NULL, WC_COMBOBOXA, "Маршрут водителя автобуса",
@@ -574,7 +574,7 @@ LRESULT CALLBACK MainWindowProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lPar
 								break;
 
 							case 9:
-								SetWindowText(hwndIP, "5.254.123.2:7777");
+								SetWindowText(hwndIP, "194.61.44.61:7777");
 								SendMessage(hwndIP, EM_SETREADONLY, 1, 0);
 								break;
 
@@ -684,10 +684,13 @@ LRESULT CALLBACK MainWindowProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lPar
 
 		case WM_GETMINMAXINFO:
 		{
-			((LPMINMAXINFO)lParam)->ptMinTrackSize.x = 630;
-			((LPMINMAXINFO)lParam)->ptMinTrackSize.y = 350;
-			((LPMINMAXINFO)lParam)->ptMaxTrackSize.x = 630;
-			((LPMINMAXINFO)lParam)->ptMaxTrackSize.y = 350;
+			int windowWidth = 630;
+			int windowHeight = 350;
+
+			((LPMINMAXINFO)lParam)->ptMinTrackSize.x = windowWidth;
+			((LPMINMAXINFO)lParam)->ptMinTrackSize.y = windowHeight;
+			((LPMINMAXINFO)lParam)->ptMaxTrackSize.x = windowWidth;
+			((LPMINMAXINFO)lParam)->ptMaxTrackSize.y = windowHeight;
 		}
 		break;
 
@@ -724,7 +727,7 @@ void WindowThread(void *) {
 		return;
 
 	hdcScreen = GetDC(HWND_DESKTOP);
-	g_hfText = CreateFont(-MulDiv(11, GetDeviceCaps(hdcScreen, LOGPIXELSY), 81),
+	g_hfText = CreateFont(15,
 		0, 0, 0, FW_NORMAL, FALSE, FALSE, FALSE, RUSSIAN_CHARSET, OUT_TT_PRECIS,
 		CLIP_DEFAULT_PRECIS, DEFAULT_QUALITY, FF_DONTCARE, "Tahoma");
 	ReleaseDC(HWND_DESKTOP, hdcScreen);

@@ -97,7 +97,7 @@ void LoadConfig(char *szSettingsPath) {
 	GetPrivateProfileString(szAppName, "BusRoute", "0", pRunData->szBusRoute, INI_STRING_LEN, szPath);
 	SendDlgItemMessage(hwnd, 103, CB_SETCURSEL, atoi(pRunData->szBusRoute), 0);
 
-	GetPrivateProfileString(szAppName, "AntiAfkDelay", "1", pRunData->szAntiAfkDelay, INI_STRING_LEN, szPath);
+	GetPrivateProfileString(szAppName, "AntiAfkDelay", "400", pRunData->szAntiAfkDelay, INI_STRING_LEN, szPath);
 	SetWindowText(hwndAntiAfkDelay, pRunData->szAntiAfkDelay);
 
 	GetPrivateProfileString(szAppName, "AntiAfkOffset", "0.001", pRunData->szAntiAfkOffset, INI_STRING_LEN, szPath);
