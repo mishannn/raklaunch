@@ -6,7 +6,7 @@
 #define ICON_MAIN 100
 #define RAKBOT_VERSION "0.8"
 
-#define OWNIP_ID 25
+#define OWNIP_ID 34
 
 #pragma comment(linker, "/manifestdependency:\"type='win32' \
                         name='Microsoft.Windows.Common-Controls' \

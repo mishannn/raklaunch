@@ -159,6 +159,15 @@ LRESULT CALLBACK MainWindowProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lPar
 			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Advance RolePlay 7 | Silver Server");
 			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Advance RolePlay 8 | Purple Server");
 			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Advance RolePlay 9 | Chocolate Server");
+			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Arizona RolePlay 1 | Phoenix");
+			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Arizona RolePlay 2 | Tucson");
+			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Arizona RolePlay 3 | Scottdale");
+			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Arizona RolePlay 4 | Chandler");
+			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Arizona RolePlay 5 | Brainburg");
+			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Arizona RolePlay 6 | Saint Rose");
+			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Arizona RolePlay 7 | Mesa");
+			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Arizona RolePlay 8 | Red-Rock");
+			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Arizona RolePlay 9 | Yuma");
 			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Diamond RolePlay 1 | Emerald");
 			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Diamond RolePlay 2 | Radiant");
 			SendMessage(hwndServer, CB_ADDSTRING, 0, (LPARAM)"Diamond RolePlay 3 | Trilliant");
@@ -574,81 +583,126 @@ LRESULT CALLBACK MainWindowProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lPar
 								break;
 
 							case 9:
-								SetWindowText(hwndIP, "194.61.44.61:7777");
+								SetWindowText(hwndIP, "185.169.134.3:7777");
 								SendMessage(hwndIP, EM_SETREADONLY, 1, 0);
 								break;
 
 							case 10:
-								SetWindowText(hwndIP, "5.254.123.3:7777");
+								SetWindowText(hwndIP, "185.169.134.4:7777");
 								SendMessage(hwndIP, EM_SETREADONLY, 1, 0);
 								break;
 
 							case 11:
-								SetWindowText(hwndIP, "5.254.123.4:7777");
+								SetWindowText(hwndIP, "185.169.134.43:7777");
 								SendMessage(hwndIP, EM_SETREADONLY, 1, 0);
 								break;
 
 							case 12:
-								SetWindowText(hwndIP, "5.254.123.5:7777");
+								SetWindowText(hwndIP, "185.169.134.44:7777");
 								SendMessage(hwndIP, EM_SETREADONLY, 1, 0);
 								break;
 
 							case 13:
-								SetWindowText(hwndIP, "5.254.123.6:7777");
+								SetWindowText(hwndIP, "185.169.134.45:7777");
 								SendMessage(hwndIP, EM_SETREADONLY, 1, 0);
 								break;
 
 							case 14:
-								SetWindowText(hwndIP, "5.254.105.202:7777");
+								SetWindowText(hwndIP, "185.169.134.5:7777");
 								SendMessage(hwndIP, EM_SETREADONLY, 1, 0);
 								break;
 
 							case 15:
-								SetWindowText(hwndIP, "5.254.105.203:7777");
+								SetWindowText(hwndIP, "185.169.134.59:7777");
 								SendMessage(hwndIP, EM_SETREADONLY, 1, 0);
 								break;
 
 							case 16:
-								SetWindowText(hwndIP, "5.254.105.204:7777");
+								SetWindowText(hwndIP, "185.169.134.61:7777");
 								SendMessage(hwndIP, EM_SETREADONLY, 1, 0);
 								break;
 
 							case 17:
-								SetWindowText(hwndIP, "185.169.134.19:7777");
+								SetWindowText(hwndIP, "185.169.134.107:7777");
 								SendMessage(hwndIP, EM_SETREADONLY, 1, 0);
 								break;
 
 							case 18:
-								SetWindowText(hwndIP, "185.169.134.20:7777");
+								SetWindowText(hwndIP, "194.61.44.61:7777");
 								SendMessage(hwndIP, EM_SETREADONLY, 1, 0);
 								break;
 
 							case 19:
-								SetWindowText(hwndIP, "185.169.134.21:7777");
+								SetWindowText(hwndIP, "5.254.123.3:7777");
 								SendMessage(hwndIP, EM_SETREADONLY, 1, 0);
 								break;
 
 							case 20:
-								SetWindowText(hwndIP, "185.169.134.22:7777");
+								SetWindowText(hwndIP, "5.254.123.4:7777");
 								SendMessage(hwndIP, EM_SETREADONLY, 1, 0);
 								break;
 
 							case 21:
-								SetWindowText(hwndIP, "185.169.134.22:7771");
+								SetWindowText(hwndIP, "5.254.123.5:7777");
 								SendMessage(hwndIP, EM_SETREADONLY, 1, 0);
 								break;
 
 							case 22:
-								SetWindowText(hwndIP, "185.169.134.22:7773");
+								SetWindowText(hwndIP, "5.254.123.6:7777");
 								SendMessage(hwndIP, EM_SETREADONLY, 1, 0);
 								break;
 
 							case 23:
-								SetWindowText(hwndIP, "185.169.134.34:7777");
+								SetWindowText(hwndIP, "5.254.105.202:7777");
 								SendMessage(hwndIP, EM_SETREADONLY, 1, 0);
 								break;
 
 							case 24:
+								SetWindowText(hwndIP, "5.254.105.203:7777");
+								SendMessage(hwndIP, EM_SETREADONLY, 1, 0);
+								break;
+
+							case 25:
+								SetWindowText(hwndIP, "5.254.105.204:7777");
+								SendMessage(hwndIP, EM_SETREADONLY, 1, 0);
+								break;
+
+							case 26:
+								SetWindowText(hwndIP, "185.169.134.19:7777");
+								SendMessage(hwndIP, EM_SETREADONLY, 1, 0);
+								break;
+
+							case 27:
+								SetWindowText(hwndIP, "185.169.134.20:7777");
+								SendMessage(hwndIP, EM_SETREADONLY, 1, 0);
+								break;
+
+							case 28:
+								SetWindowText(hwndIP, "185.169.134.21:7777");
+								SendMessage(hwndIP, EM_SETREADONLY, 1, 0);
+								break;
+
+							case 29:
+								SetWindowText(hwndIP, "185.169.134.22:7777");
+								SendMessage(hwndIP, EM_SETREADONLY, 1, 0);
+								break;
+
+							case 30:
+								SetWindowText(hwndIP, "185.169.134.22:7771");
+								SendMessage(hwndIP, EM_SETREADONLY, 1, 0);
+								break;
+
+							case 31:
+								SetWindowText(hwndIP, "185.169.134.22:7773");
+								SendMessage(hwndIP, EM_SETREADONLY, 1, 0);
+								break;
+
+							case 32:
+								SetWindowText(hwndIP, "185.169.134.34:7777");
+								SendMessage(hwndIP, EM_SETREADONLY, 1, 0);
+								break;
+
+							case 33:
 								SetWindowText(hwndIP, "185.169.134.11:7777");
 								SendMessage(hwndIP, EM_SETREADONLY, 1, 0);
 								break;
